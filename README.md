@@ -5,3 +5,5 @@
 # Now i have my outliers """outliers = df[(df.price > upper_limit) | (df.price < lower_limit)]""" i take 10 samples of my outliers "outliers.sample(10)"
 # I take all of them """df2 = df[(df.price<upper_limit) & (df.price>lower_limit)]""" and assign it into new df2.
 # And i look how many outliers i remove """df.shape[0] - df2.shape[0]""" from my df.
+# When i get my new df2. i can remove outliers with 4 std. and get my "max_limit" """df2.price.mean() + 4*df2.price.std()""" 
+# And "min_limit" """df2.price.mean() - 4*df2.price.std()"""
