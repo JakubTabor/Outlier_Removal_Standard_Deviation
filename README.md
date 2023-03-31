@@ -8,3 +8,4 @@
 # When i get my new df2. i can remove outliers with 4 std. and get my "max_limit" """df2.price.mean() + 4*df2.price.std()""" 
 # And "min_limit" """df2.price.mean() - 4*df2.price.std()"""
 # I can take my outliers """df2[(df2.price>max_limit) | (df2.price < min_limit)].sample(10)""" a see 10 samples of them
+# Now i get my new df3. with outliers """df3 = df2[(df2.price>min_limit) & (df2.price < max_limit)]"""
