@@ -10,3 +10,4 @@
 # I can take my outliers """df2[(df2.price>max_limit) | (df2.price < min_limit)].sample(10)""" a see 10 samples of them
 # Now i get my new df3. with outliers """df3 = df2[(df2.price>min_limit) & (df2.price < max_limit)]"""
 # And remove them from my df. """df2.shape[0]-df3.shape[0]"""
+# Then i plot my new data on histogram using "norm" from "scipy.stats"
